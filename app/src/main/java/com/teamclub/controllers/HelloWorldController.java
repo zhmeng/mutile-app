@@ -1,4 +1,4 @@
-package com.teamclub.app.controllers;
+package com.teamclub.controllers;
 
 import com.teamclub.sutil.ScalaUtil;
 import com.teamclub.util.JavaUtil;
@@ -16,7 +16,7 @@ public class HelloWorldController {
         StringBuilder sb = new StringBuilder();
         JavaUtil.show();
         ScalaUtil.show();
-        sb.append("ACSXXSSS");
+        sb.append("ACSXXZZZSSSVVV");
         sb.append("BCD");
         return sb.toString();
     }

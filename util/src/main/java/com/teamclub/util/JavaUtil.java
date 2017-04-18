@@ -9,7 +9,7 @@ import org.slf4j.LoggerFactory;
 public class JavaUtil {
     private static Logger logger = LoggerFactory.getLogger(JavaUtil.class);
     public static String show() {
-        logger.info("JavaUtil");
-        return "JavaUtil";
+        logger.info("JavaXXUtil");
+        return "JavaXXUtil";
     }
 }
