@@ -16,7 +16,7 @@ public class HelloWorldController {
         StringBuilder sb = new StringBuilder();
         JavaUtil.show();
         ScalaUtil.show();
-        sb.append("ACSXXZZZSSSVVV");
+        sb.append("A");
         sb.append("BCD");
         return sb.toString();
     }

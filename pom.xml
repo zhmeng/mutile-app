@@ -10,12 +10,12 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>app</module>
-        <module>util</module>
+        <module>teamclub-app</module>
+        <module>teamclub-util</module>
+        <module>teamclub-routes</module>
     </modules>
 
     <properties>
-        <build.file>build/dist.xml</build.file>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <encoding>UTF-8</encoding>
@@ -40,13 +40,33 @@
             </dependency>
             <dependency>
                 <groupId>com.teamclub</groupId>
-                <artifactId>app</artifactId>
+                <artifactId>teamclub-app</artifactId>
                 <version>1.0</version>
             </dependency>
             <dependency>
                 <groupId>com.teamclub</groupId>
-                <artifactId>util</artifactId>
+                <artifactId>teamclub-util</artifactId>
                 <version>1.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.teamclub</groupId>
+                <artifactId>teamclub-routes</artifactId>
+                <version>1.0</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>2.5</version>
+            </dependency>
+            <dependency>
+                <groupId>net.sourceforge.jregex</groupId>
+                <artifactId>jregex</artifactId>
+                <version>1.2_01</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>21.0</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -69,6 +89,18 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.teamclub</groupId>
+            <artifactId>teamclub-routes</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
         </dependency>
     </dependencies>
     <build>
@@ -119,24 +151,6 @@
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-assembly-plugin</artifactId>
-                <version>3.0.0</version>
-                <configuration>
-                    <descriptors>
-                        <descriptor>${build.file}</descriptor>
-                    </descriptors>
-                </configuration>
-                <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>single</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
         </plugins>
     </build>
