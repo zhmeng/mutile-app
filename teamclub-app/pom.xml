@@ -13,6 +13,10 @@
             <groupId>com.teamclub</groupId>
             <artifactId>teamclub-util</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.teamclub</groupId>
+            <artifactId>teamclub-routes</artifactId>
+        </dependency>
     </dependencies>
     <properties>
         <main-class>com.teamclub.app.App</main-class>

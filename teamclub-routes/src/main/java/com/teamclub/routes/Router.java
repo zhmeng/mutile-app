@@ -133,7 +133,7 @@ public class Router {
      */
     static void parse(Resource fileResource) throws IOException {
         String fileAbsolutePath = ((FileSystemResource) fileResource).getPath();
-        String content = IOUtils.toString(new FileInputStream(new File(fileAbsolutePath)));
+        String content = IOUtils.toString(new FileInputStream(new File(fileAbsolutePath)), "UTF-8");
 
         parse(content, fileAbsolutePath);
     }

@@ -25,7 +25,9 @@ public abstract class RouterConfigurationSupport extends DelegatingWebMvcConfigu
         return false;
     }
 
-    @Bean @Override public RequestMappingHandlerMapping requestMappingHandlerMapping () {
+    @Bean
+    @Override
+    public RequestMappingHandlerMapping requestMappingHandlerMapping () {
         RequestMappingHandlerMapping handlerMapping = new RequestMappingHandlerMapping();
         handlerMapping.setOrder(3);
         handlerMapping.setInterceptors(getInterceptors());

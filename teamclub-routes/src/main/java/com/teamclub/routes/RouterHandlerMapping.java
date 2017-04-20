@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeansException;
 import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.HandlerMapping;
 import org.springframework.web.servlet.handler.AbstractHandlerMapping;
@@ -46,7 +47,7 @@ public class RouterHandlerMapping extends AbstractHandlerMapping {
     @Override
     protected void initApplicationContext() throws BeansException {
         super.initApplicationContext();
-        this.methodResolver.setCachedControllers(getApplicationContext().getBeansWithAnnotation(Controller.class));
+        this.methodResolver.setCachedControllers(getApplicationContext().getBeansWithAnnotation(RestController.class));
         List<Resource> fileResources = new ArrayList<Resource>();
         try {
             for(String fileName : routeFiles) {

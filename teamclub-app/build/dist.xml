@@ -33,7 +33,7 @@
     </moduleSets>
     <fileSets>
         <fileSet>
-            <directory>${project.basedir}/script/</directory>
+            <directory>${project.basedir}/scripts/</directory>
             <outputDirectory>/</outputDirectory>
             <includes>
                 <include>*</include>
