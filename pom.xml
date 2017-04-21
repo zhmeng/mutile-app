@@ -10,9 +10,11 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>teamclub-routes</module>
+        <module>teamclub-ebean</module>
         <module>teamclub-app</module>
         <module>teamclub-util</module>
-        <module>teamclub-routes</module>
+        <module>teamclub-domain</module>
     </modules>
 
     <properties>
@@ -51,6 +53,11 @@
             <dependency>
                 <groupId>com.teamclub</groupId>
                 <artifactId>teamclub-routes</artifactId>
+                <version>1.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.teamclub</groupId>
+                <artifactId>teamclub-ebean</artifactId>
                 <version>1.0</version>
             </dependency>
             <dependency>
