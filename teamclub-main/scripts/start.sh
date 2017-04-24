@@ -8,7 +8,6 @@ APP_CONFIG="conf/application.properties"
 APP_PORT="9200"
 BOOT_OPTS="--server.port=$APP_PORT"
 JAVA_OPTS="-Dfile.encoding=UTF-8 -Xmx1024M -Xms64M -Xss256K -XX:MaxPermSize=256M -XX:+UseParallelGC "
-JAVA_HOME_PATH="/home/wxpay/jdk1.8.0_121"
 
 CL_ERR='\e[0;31m'
 CL_INFO='\e[0;32m'

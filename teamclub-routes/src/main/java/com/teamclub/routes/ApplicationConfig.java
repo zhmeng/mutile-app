@@ -16,7 +16,7 @@ public class ApplicationConfig extends RouterConfigurationSupport {
     public List<String> listRouteFiles () {
         try {
             List<String> routeFiles = new ArrayList<String>();
-            routeFiles.add("classpath:*.routes");
+            routeFiles.add("*.routes");
             return routeFiles;
         }catch (Exception e) {
             return Lists.newArrayList();

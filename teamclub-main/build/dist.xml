@@ -40,7 +40,7 @@
             </includes>
         </fileSet>
         <fileSet>
-            <directory>${project.basedir}/target/</directory>
+            <directory>${project.basedir}/target</directory>
             <outputDirectory>modules/</outputDirectory>
             <includes>
                 <include>${project.artifactId}-${project.version}.jar</include>
