@@ -15,7 +15,9 @@
         <module>teamclub-app</module>
         <module>teamclub-util</module>
         <module>teamclub-domain</module>
+        <module>teamclub-pay</module>
         <module>teamclub-main</module>
+        <module>teamclub-test</module>
     </modules>
 
     <properties>
@@ -40,6 +42,21 @@
                 <version>Dalston.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.teamclub</groupId>
+                <artifactId>teamclub-test</artifactId>
+                <version>1.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.teamclub</groupId>
+                <artifactId>teamclub-domain</artifactId>
+                <version>1.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.teamclub</groupId>
+                <artifactId>teamclub-pay</artifactId>
+                <version>1.0</version>
             </dependency>
             <dependency>
                 <groupId>com.teamclub</groupId>

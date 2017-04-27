@@ -1,1 +1,1 @@
-GET     /simpleaction                  TestController.simpleAction
+POST     /app/login                         com.teamclub.app.scontrollers.LoginController.login

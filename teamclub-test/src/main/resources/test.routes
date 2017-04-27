@@ -1,0 +1,1 @@
+GET     /app/simpleaction                  com.teamclub.test.controllers.TestController.simpleAction

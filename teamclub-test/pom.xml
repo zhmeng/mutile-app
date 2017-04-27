@@ -6,12 +6,19 @@
         <version>1.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>teamclub-util</artifactId>
-
+    <artifactId>teamclub-test</artifactId>
     <dependencies>
         <dependency>
             <groupId>com.teamclub</groupId>
-            <artifactId>teamclub-ebean</artifactId>
+            <artifactId>teamclub-domain</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.teamclub</groupId>
+            <artifactId>teamclub-routes</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.teamclub</groupId>
+            <artifactId>teamclub-util</artifactId>
         </dependency>
     </dependencies>
 </project>

@@ -17,13 +17,13 @@
             <groupId>com.teamclub</groupId>
             <artifactId>teamclub-routes</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.teamclub</groupId>
+            <artifactId>teamclub-domain</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.teamclub</groupId>
+            <artifactId>teamclub-pay</artifactId>
+        </dependency>
     </dependencies>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>net.alchim31.maven</groupId>
-                <artifactId>scala-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 </project>

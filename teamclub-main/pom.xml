@@ -12,6 +12,10 @@
             <groupId>com.teamclub</groupId>
             <artifactId>teamclub-app</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.teamclub</groupId>
+            <artifactId>teamclub-test</artifactId>
+        </dependency>
     </dependencies>
     <properties>
         <main-class>com.teamclub.App</main-class>

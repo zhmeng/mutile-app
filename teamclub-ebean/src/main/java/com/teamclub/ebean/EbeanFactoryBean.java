@@ -7,6 +7,8 @@ import org.springframework.beans.factory.FactoryBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.Arrays;
+
 /**
  * Created by ilkkzm on 17-4-21.
  */
@@ -23,6 +25,7 @@ public class EbeanFactoryBean implements FactoryBean<EbeanServer> {
         config.setCurrentUserProvider(currentUser);
         config.loadFromProperties();
         config.setDefaultServer(true);
+        config.setPackages(Arrays.asList("com.teamclub.domain"));
         config.setRegister(true);
         return EbeanServerFactory.create(config);
     }

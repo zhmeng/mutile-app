@@ -6,12 +6,17 @@
         <version>1.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>teamclub-util</artifactId>
+    <artifactId>teamclub-pay</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>com.teamclub</groupId>
-            <artifactId>teamclub-ebean</artifactId>
+            <artifactId>teamclub-util</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alipay</groupId>
+            <artifactId>sdk-Java</artifactId>
+            <version>ALL20170411180912</version>
         </dependency>
     </dependencies>
 </project>
