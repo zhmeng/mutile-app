@@ -1,2 +1,3 @@
 # ali 商户号同步
 GET     /pay/ali/sync       com.teamclub.pay.controllers.AliMerchantSyncAction.sync
+GET     /pay/weixin/sync       com.teamclub.pay.controllers.WeixinMerchantSyncAction.sync

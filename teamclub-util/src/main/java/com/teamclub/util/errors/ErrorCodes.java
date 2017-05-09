@@ -12,4 +12,8 @@ public class ErrorCodes {
     public static ErrorCode BIZ_FAILURE = new ErrorCode(501, "业务失败");
 
     public static ErrorCode ENTITY_NOT_FOUND = new ErrorCode(611, "实体不存在");
+
+    public static ErrorCode apply(Integer status, String message) {
+        return new ErrorCode(status, message);
+    }
 }

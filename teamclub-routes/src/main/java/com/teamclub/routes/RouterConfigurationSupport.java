@@ -11,6 +11,10 @@ import java.util.List;
 
 public abstract class RouterConfigurationSupport extends DelegatingWebMvcConfiguration {
 
+    public RouterConfigurationSupport(){
+
+    }
+
     @Bean
     public RouterHandlerMapping createRouterHandlerMapping () {
         RouterHandlerMapping handlerMapping = new RouterHandlerMapping();

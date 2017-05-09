@@ -1,0 +1,13 @@
+weixin:
+  open:
+    apiComponentToken: https://api.weixin.qq.com/cgi-bin/component/api_component_token
+    apiCreatePreAuthCode: https://api.weixin.qq.com/cgi-bin/component/api_create_preauthcode?component_access_token=%s
+    authUrl: https://mp.weixin.qq.com/cgi-bin/componentloginpage?component_appid=%s&pre_auth_code=%s&redirect_uri=%s #授权页面
+    apiQueryAuth: https://api.weixin.qq.com/cgi-bin/component/api_query_auth?component_access_token=%s
+    apiAuthorizerToken: https://api.weixin.qq.com/cgi-bin/component/api_authorizer_token?component_access_token=%s
+    apiGetAuthorizerInfo: https://api.weixin.qq.com/cgi-bin/component/api_get_authorizer_info?component_access_token=%s # 获取公众号信息
+  public:
+    templateSend: https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=%s  #模板推送
+    customerMsgSend: https://api.weixin.qq.com/cgi-bin/message/custom/send?access_token=%s #客服消息
+    oauthUrl: https://open.weixin.qq.com/connect/oauth2/authorize?appid=%s&redirect_uri=%s&response_type=code&scope=%s&state=%s&component_appid=%s#wechat_redirect
+    oauthUrl2: https://api.weixin.qq.com/sns/oauth2/component/access_token?appid=%s&code=%s&grant_type=authorization_code&component_appid=%s&component_access_token=%s

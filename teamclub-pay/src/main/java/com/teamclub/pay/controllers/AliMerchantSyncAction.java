@@ -1,6 +1,7 @@
 package com.teamclub.pay.controllers;
 
 import com.teamclub.pay.services.AliMerchantSyncService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController("com.teamclub.pay.controllers.AliMerchantSyncAction")
 public class AliMerchantSyncAction {
 
+    @Autowired
     private AliMerchantSyncService aliMerchantSyncService;
 
     public String sync() {

@@ -8,15 +8,38 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>teamclub-pay</artifactId>
 
+    <repositories>
+        <repository>
+            <id>sonatype-nexus-snapshots</id>
+            <name>Sonatype Nexus Snapshots</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
     <dependencies>
         <dependency>
             <groupId>com.teamclub</groupId>
             <artifactId>teamclub-util</artifactId>
         </dependency>
         <dependency>
+            <groupId>com.teamclub</groupId>
+            <artifactId>teamclub-domain</artifactId>
+        </dependency>
+        <dependency>
             <groupId>com.alipay</groupId>
             <artifactId>sdk-Java</artifactId>
             <version>ALL20170411180912</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.com.riversoft</groupId>
+            <artifactId>weixin-pay</artifactId>
+            <version>0.9.2</version>
         </dependency>
     </dependencies>
 </project>

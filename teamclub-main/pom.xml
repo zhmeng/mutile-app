@@ -14,6 +14,10 @@
         </dependency>
         <dependency>
             <groupId>com.teamclub</groupId>
+            <artifactId>teamclub-weixin</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.teamclub</groupId>
             <artifactId>teamclub-test</artifactId>
         </dependency>
     </dependencies>

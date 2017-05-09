@@ -1,13 +1,12 @@
 package com.teamclub.app.scontrollers
 
+import javax.validation.Valid
+
 import com.fasterxml.jackson.databind.JsonNode
 import com.teamclub.app.sforms.AppSubjectUserForm
 import com.teamclub.app.sservices.LoginService
-import com.teamclub.domain.AppSubjectUser
-import com.teamclub.util.errors.ErrorCodes
-import com.teamclub.util.libs.{Eithers, F}
+import com.teamclub.util.libs.Eithers
 import org.slf4j.LoggerFactory
-import org.springframework.beans.BeanUtils
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.{RequestBody, RestController}
 
@@ -21,11 +20,7 @@ class LoginController {
   @Autowired
   val loginService: LoginService = null
 
-  def login(@RequestBody form: AppSubjectUserForm): JsonNode = {
-    logger.info(form.userName)
-    val subjectUser = new AppSubjectUser()
-    BeanUtils.copyProperties(form, subjectUser)
-    logger.info(subjectUser.getUserName)
-    Eithers.toJson(loginService.getList(form))
+  def login(@RequestBody @Valid form: AppSubjectUserForm): JsonNode = {
+    Eithers.toJson(loginService.exits(form))
   }
 }

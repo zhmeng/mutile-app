@@ -1,1 +1,1 @@
-GET     /app/simpleaction                  com.teamclub.test.controllers.TestController.simpleAction
+GET     /test/simpleaction/{id}                  com.teamclub.test.controllers.TestController.simpleAction

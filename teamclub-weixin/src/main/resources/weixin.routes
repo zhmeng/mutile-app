@@ -1,0 +1,21 @@
+#测试配置文件
+POST    /weixin/open/weixinauth/testConf            com.teamclub.weixin.controllers.open.WeixinAuthAction.testConf
+#获取授权地址
+GET     /weixin/open/weixinauth/getAuthUrl          com.teamclub.weixin.controllers.open.WeixinAuthAction.getAuthUrl
+#公众帐号授权回调
+GET     /weixin/open/weixinauth/{thirdOrganNo}/{pubOrganNo}/authCallback          com.teamclub.weixin.controllers.open.WeixinAuthAction.authCallback
+#根据appid获取accessToken
+GET     /weixin/open/weixinauth/{appid}/accessToken com.teamclub.weixin.controllers.open.WeixinAuthAction.accessToken
+#接收公众帐号消息服务回调 公众号消息与事件接收URL
+POST    /weixin/open/weixinauth/{appid}/{organNo}/callback  com.teamclub.weixin.controllers.open.WeixinAuthAction.appidCallback
+#授权事件接收URL
+POST    /weixin/open/weixinauth/{organNo}/open      com.teamclub.weixin.controllers.open.WeixinAuthAction.callback
+
+#公众号-发送模板
+GET     /weixin/open/weixinpub/{appid}/sendTemplate com.teamclub.weixin.controllers.open.WeixinPubAction.sendTemplate
+#公众号-发送消息
+GET     /weixin/open/weixinpub/{appid}/sendMsg      com.teamclub.weixin.controllers.open.WeixinPubAction.sendMsg
+#oauth 授权
+GET     /weixin/open/weixinpub/oauth/getOpenOauthUrl    com.teamclub.weixin.controllers.open.WeixinPubAction.getOpenOauthUrl
+#receive code url
+GET     /weixin/open/weixinpub/oauth/receiveCode        com.teamclub.weixin.controllers.open.WeixinPubAction.receiveCode
