@@ -11,11 +11,7 @@
     <dependencies>
         <dependency>
             <groupId>com.teamclub</groupId>
-            <artifactId>teamclub-util</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.teamclub</groupId>
-            <artifactId>teamclub-routes</artifactId>
+            <artifactId>teamclub-base</artifactId>
         </dependency>
         <dependency>
             <groupId>com.teamclub</groupId>

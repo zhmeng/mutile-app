@@ -48,6 +48,7 @@ public class RouterHandlerMapping extends AbstractHandlerMapping {
     protected void initApplicationContext() throws BeansException {
         super.initApplicationContext();
         this.methodResolver.setCachedControllers(getApplicationContext().getBeansWithAnnotation(RestController.class));
+        this.methodResolver.setCachedControllers(getApplicationContext().getBeansWithAnnotation(Controller.class));
         List<Resource> fileResources = new ArrayList<Resource>();
         try {
             for(String fileName : routeFiles) {

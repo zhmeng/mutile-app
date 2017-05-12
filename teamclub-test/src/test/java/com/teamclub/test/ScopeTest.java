@@ -1,6 +1,7 @@
 package com.teamclub.test;
 
 import com.teamclub.TestApp;
+import com.teamclub.test.services.CacheService;
 import com.teamclub.test.services.ScopeService;
 import com.teamclub.util.Springs;
 import org.junit.Test;
@@ -21,6 +22,9 @@ public class ScopeTest {
     @Autowired
     private Springs springs;
 
+    @Autowired
+    private CacheService cacheService;
+
     @Test
     public void showHello() throws Exception {
         ScopeService bean = springs.getBean(ScopeService.class, "12312");
@@ -31,4 +35,11 @@ public class ScopeTest {
         System.out.println(url);
     }
 
+    @Test
+    public void testCache() {
+//        cacheService.queryFullNameById(1);
+//        cacheService.queryFullNameById(1);
+//        cacheService.queryFullNameById(1);
+        cacheService.queryFullNameById(2, "cxv");
+    }
 }

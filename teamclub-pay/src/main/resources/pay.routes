@@ -1,3 +1,7 @@
 # ali 商户号同步
 GET     /pay/ali/sync       com.teamclub.pay.controllers.AliMerchantSyncAction.sync
 GET     /pay/weixin/sync       com.teamclub.pay.controllers.WeixinMerchantSyncAction.sync
+
+# ali oauth 授权
+GET     /pay/ali/oath       com.teamclub.pay.controllers.AliOauthAction.oauthUrl
+GET     /pay/ali/oauthHtml  com.teamclub.pay.controllers.AliOauthAction.oauthHtml

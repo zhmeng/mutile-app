@@ -25,7 +25,7 @@
     <dependencies>
         <dependency>
             <groupId>com.teamclub</groupId>
-            <artifactId>teamclub-util</artifactId>
+            <artifactId>teamclub-base</artifactId>
         </dependency>
         <dependency>
             <groupId>com.teamclub</groupId>

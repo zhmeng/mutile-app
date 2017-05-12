@@ -19,6 +19,7 @@
         <module>teamclub-weixin</module>
         <module>teamclub-main</module>
         <module>teamclub-test</module>
+        <module>teamclub-base</module>
     </modules>
 
     <properties>
@@ -85,6 +86,11 @@
                 <version>1.0</version>
             </dependency>
             <dependency>
+                <groupId>com.teamclub</groupId>
+                <artifactId>teamclub-base</artifactId>
+                <version>1.0</version>
+            </dependency>
+            <dependency>
                 <groupId>commons-io</groupId>
                 <artifactId>commons-io</artifactId>
                 <version>2.5</version>
@@ -98,6 +104,11 @@
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>21.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.data</groupId>
+                <artifactId>spring-data-redis</artifactId>
+                <version>1.7.2.RELEASE</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
